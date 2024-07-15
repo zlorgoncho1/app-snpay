@@ -13,5 +13,5 @@ jobs:
         git config --global user.name "zlorgoncho1"
         git remote add upstream https://github.com/DSsenegal/app-snpay.git
         git fetch upstream
-        git merge upstream/main --strategy-option theirs
+        git merge upstream/main --strategy-option theirs --allow-unrelated-histories
         git push origin main
