@@ -10,7 +10,8 @@ jobs:
     - name: Run Synchronization Script
       run: |
         git config --global user.email "papamatardiop3@gmail.com"
-        git config --global user.name "zlorgoncho1"
+        git config --global user.name "zlorgoncho1"git pull origin main
+        git pull origin main
         git remote add upstream https://github.com/DSsenegal/app-snpay.git
         git fetch upstream
         git merge upstream/main --strategy-option theirs --allow-unrelated-histories
