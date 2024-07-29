@@ -8,6 +8,8 @@ jobs:
     - name: Checkout on code
       uses: actions/checkout@v2
     - name: Run Synchronization Script
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
       run: |
         git config --global user.email "papamatardiop3@gmail.com"
         git config --global user.name "zlorgoncho1"
